@@ -1,6 +1,6 @@
 DOCKER_REPO=clayman083
 IMAGE_NAME=ansible-action
-VERSION=1.0.0dev0
+VERSION=1.0.0
 
 .PHONY: build
 build:
