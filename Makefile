@@ -1,6 +1,6 @@
 DOCKER_REPO=clayman083
 IMAGE_NAME=ansible-action
-
+VERSION=1.0.0dev0
 
 .PHONY: build
 build:
@@ -8,8 +8,8 @@ build:
 
 .PHONY: tag
 tag:
-	docker tag $(IMAGE_NAME):latest $(DOCKER_REPO)/$(IMAGE_NAME):${GITHUB_REF}
+	docker tag $(IMAGE_NAME):latest $(DOCKER_REPO)/$(IMAGE_NAME):$(VERSION)
 
 .PHONY: publish
 publish: tag
-	docker push $(DOCKER_REPO)/$(IMAGE_NAME):${GITHUB_REF}
+	docker push $(DOCKER_REPO)/$(IMAGE_NAME):$(VERSION)
