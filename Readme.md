@@ -9,8 +9,7 @@ action "Lint" {
   uses = "docker://clayman083/ansible-action"
   args = ["ansible-lint", "."]
 }
+```
 
 ## License
 The Dockerfile and associated scripts and documentation in this project are released under the [MIT](license).
-```
-
